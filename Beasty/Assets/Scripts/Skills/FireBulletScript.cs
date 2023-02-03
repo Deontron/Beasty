@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireBulletScript : MonoBehaviour
 {
     [SerializeField] private Transform[] bullets;
+    [SerializeField] private Transform gun;
     private int bulletAmount;
     private int bulletCounter = 0;
 
@@ -42,12 +43,14 @@ public class FireBulletScript : MonoBehaviour
 
         if (bulletCounter < bulletAmount && canFire)
         {
-            bullets[bulletCounter].transform.position = transform.position;
             bullets[bulletCounter].gameObject.SetActive(true);
+            bullets[bulletCounter].transform.position = gun.position;
+            bullets[bulletCounter].transform.rotation = transform.rotation;
+
             bulletCounter++;
         }
 
-        if (bulletCounter == (bulletAmount - 1))
+        if (bulletCounter == (bulletAmount))
         {
             bulletCounter = 0;
         }

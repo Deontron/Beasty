@@ -7,7 +7,7 @@ public class BeastController : MonoBehaviour
     [SerializeField] private float speed;
 
     private Rigidbody2D rb;
-    private Vector2 mousePos;
+    private Vector3 mousePos;
     private Vector2 direction;
 
     void Start()
@@ -31,11 +31,9 @@ public class BeastController : MonoBehaviour
 
     private void Rotation()
     {
-        mousePos = Input.mousePosition;
-        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        direction = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
-
-        transform.up = direction;
+        Quaternion rotation = Quaternion.LookRotation(mousePos - transform.position, transform.TransformDirection(-Vector3.forward));
+        transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
     }
 }

@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    private Transform beast;
-    private float speed = 10;
+    [SerializeField] private float speed = 10;
     private float timer;
 
     private void Start()
     {
-        beast = GameObject.FindGameObjectWithTag("Beast").transform;
     }
     private void Update()
     {
-        transform.Translate(beast.up * Time.deltaTime * speed);
+        transform.position += transform.up * Time.deltaTime * speed;
 
         SetTimer();
     }
