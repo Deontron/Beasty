@@ -497,7 +497,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -571,22 +570,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13605a3c1ead5d84db6786b3cbda0450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 2055504774}
-  offset: {x: 0, y: 0, z: -10}
-  speed: 0.3
-  velocity: {x: 0, y: 0, z: 0}
 --- !u!4 &581081611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3922334981345752579, guid: 2af1a27b60f83f04380ec65b30c9b4cd, type: 3}
@@ -742,7 +725,6 @@ GameObject:
   m_Component:
   - component: {fileID: 927822052}
   - component: {fileID: 927822051}
-  - component: {fileID: 927822053}
   m_Layer: 0
   m_Name: BG
   m_TagString: Untagged
@@ -818,26 +800,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &927822053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927822050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f56db00199fe394d845ddba221ac145, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  block: {fileID: 1765346574}
-  color:
-    r: 0.21960786
-    g: 0.21960786
-    b: 0.21960786
-    a: 1
-  spawnedBlock: {fileID: 0}
-  width: 20
 --- !u!1001 &929158251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2093,10 +2055,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2055504774}
   - component: {fileID: 2055504773}
-  - component: {fileID: 2055504772}
-  - component: {fileID: 2055504780}
-  - component: {fileID: 2055504779}
-  - component: {fileID: 2055504781}
   - component: {fileID: 2055504775}
   - component: {fileID: 2055504777}
   - component: {fileID: 2055504776}
@@ -2107,22 +2065,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2055504772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055504771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c264c83a4a92a4f815e5b36e5d1e53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  rb: {fileID: 0}
-  mousePos: {x: 0, y: 0, z: 0}
-  direction: {x: 0, y: 0}
 --- !u!212 &2055504773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2244,77 +2186,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.2
---- !u!114 &2055504779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055504771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bcac8423d0fd594e9bc8b613ed3c229, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullets:
-  - {fileID: 1422155754}
-  - {fileID: 581081611}
-  - {fileID: 1613632655}
-  - {fileID: 1405498843}
-  - {fileID: 1726526778}
-  - {fileID: 661431374}
-  - {fileID: 2069430349}
-  - {fileID: 124145594}
-  - {fileID: 2038892634}
-  - {fileID: 486015529}
-  gun: {fileID: 344332625}
-  bulletAmount: 0
-  bulletCounter: 0
-  coolDown: 0.5
-  canFire: 1
-  coolDownTimer: 0
-  fired: 0
-  totalBullet: 100
---- !u!114 &2055504780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055504771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1db885c1cc88bd4aa289c05b1bf727e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireBullet: {fileID: 0}
-  fireBomb: {fileID: 0}
-  skillId: 0
-  skillAmount: 2
---- !u!114 &2055504781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055504771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8b7d48b758ad647997ae02dc55dda0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bombs:
-  - {fileID: 1238523565}
-  - {fileID: 1881742927}
-  - {fileID: 270568301}
-  gun: {fileID: 344332625}
-  bombAmount: 0
-  bombCounter: 0
-  coolDown: 1
-  canFire: 1
-  coolDownTimer: 0
-  fired: 0
-  totalBomb: 10
 --- !u!1 &2068277750
 GameObject:
   m_ObjectHideFlags: 0
