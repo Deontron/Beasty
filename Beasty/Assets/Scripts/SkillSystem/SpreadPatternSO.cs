@@ -5,7 +5,7 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Skills/AllSideAttack")]
 
-public class AllSidePatternSO : AttackPatternSO
+public class SpreadPatternSO : AttackPatternSO
 {
     private float angleDegrees = 15f;
     public override void Perform(Transform shootingStartPoint)

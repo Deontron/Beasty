@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35057e8a7fb5cdb468f5ec10fec6e774, type: 3}
-  m_Name: AllSideAttackSO
+  m_Name: SpreadAttackSO
   m_EditorClassIdentifier: 
-  attackDelay: 5
+  attackDelay: 1
   projectile: {fileID: 3922334981345752576, guid: 2af1a27b60f83f04380ec65b30c9b4cd, type: 3}

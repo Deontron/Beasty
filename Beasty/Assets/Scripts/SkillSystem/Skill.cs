@@ -7,10 +7,14 @@ namespace DN.SkillSystem
     public class Skill : MonoBehaviour
     {
         [SerializeField]
-        private AttackPatternSO attackPattern;
+        private AttackPatternSO[] attackPatterns;
 
         [SerializeField]
-        private Transform shootinfStartPoint;
+        private AttackPatternSO attackPattern;
+        private int index = 0;
+
+        [SerializeField]
+        private Transform shootingStartPoint;
 
         private bool shootingDelayed;
 
@@ -19,7 +23,7 @@ namespace DN.SkillSystem
             if (!shootingDelayed)
             {
                 shootingDelayed = true;
-                attackPattern.Perform(shootinfStartPoint);
+                attackPattern.Perform(shootingStartPoint);
 
                 StartCoroutine(DelayShooting());
             }
@@ -29,6 +33,13 @@ namespace DN.SkillSystem
         {
             yield return new WaitForSeconds(attackPattern.AttackDelay);
             shootingDelayed = false;
+        }
+
+        public void ChangeSkill()
+        {
+            index++;
+            index = index >= attackPatterns.Length ? 0 : index;
+            attackPattern = attackPatterns[index];
         }
     }
 }

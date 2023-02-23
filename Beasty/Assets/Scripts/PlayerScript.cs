@@ -5,9 +5,11 @@ using DN.SkillSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-    [SerializeField] Skill skill;
+    [SerializeField]
+    private Skill skill;
 
-    [SerializeField] private float movementSpeed;
+    [SerializeField]
+    private float movementSpeed;
 
     private Vector2 movementVector;
     private Vector3 mousePos;
@@ -23,6 +25,11 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             skill.PerformAttack();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            skill.ChangeSkill();
         }
     }
     void FixedUpdate()

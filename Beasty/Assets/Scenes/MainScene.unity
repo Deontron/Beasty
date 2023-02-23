@@ -498,8 +498,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31db84e3c2130f4a865913af26e8d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPattern: {fileID: 11400000, guid: cef2f7a3740402f43a1505e846a9effa, type: 2}
-  shootinfStartPoint: {fileID: 344332625}
+  attackPatterns:
+  - {fileID: 11400000, guid: cf1ed3ab73718674f92aa9a3e8a6fa36, type: 2}
+  - {fileID: 11400000, guid: e51f7c1f7a9b69d4b98c390d61d9b499, type: 2}
+  - {fileID: 11400000, guid: cef2f7a3740402f43a1505e846a9effa, type: 2}
+  attackPattern: {fileID: 11400000, guid: cf1ed3ab73718674f92aa9a3e8a6fa36, type: 2}
+  shootingStartPoint: {fileID: 344332625}
 --- !u!4 &486015529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3922334981345752579, guid: 2af1a27b60f83f04380ec65b30c9b4cd, type: 3}
