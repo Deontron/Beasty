@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9309efec0894244b85c0fba6b97602, type: 3}
-  m_Name: DefaultAttackSO
+  m_Script: {fileID: 11500000, guid: 39bf88393ab1f0f48bb753a83dd2efca, type: 3}
+  m_Name: BombAttackSO
   m_EditorClassIdentifier: 
-  attackDelay: 0.2
-  projectile: {fileID: 3922334981345752576, guid: 2af1a27b60f83f04380ec65b30c9b4cd, type: 3}
+  attackDelay: 2
+  projectile: {fileID: 3922334981345752576, guid: eb12480cd0d000443b2047ac1dee3617, type: 3}

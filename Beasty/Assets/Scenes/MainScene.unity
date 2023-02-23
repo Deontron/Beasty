@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31db84e3c2130f4a865913af26e8d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPattern: {fileID: 11400000, guid: cf1ed3ab73718674f92aa9a3e8a6fa36, type: 2}
+  attackPattern: {fileID: 11400000, guid: cef2f7a3740402f43a1505e846a9effa, type: 2}
   shootinfStartPoint: {fileID: 344332625}
 --- !u!4 &486015529 stripped
 Transform:
