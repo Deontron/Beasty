@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DN.SkillSystem;
 
 public class PlayerScript : MonoBehaviour
 {
+    [SerializeField] Skill skill;
+
     [SerializeField] private float movementSpeed;
 
     private Vector2 movementVector;
@@ -15,6 +18,13 @@ public class PlayerScript : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            skill.PerformAttack();
+        }
+    }
     void FixedUpdate()
     {
         PlayerMovement();
