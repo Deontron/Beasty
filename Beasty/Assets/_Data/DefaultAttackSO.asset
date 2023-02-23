@@ -14,3 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDelay: 0.2
   projectile: {fileID: 3922334981345752576, guid: 2af1a27b60f83f04380ec65b30c9b4cd, type: 3}
+  projectiles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Skills/BombAttack")]
+[CreateAssetMenu(menuName = "Skills/BombAttack")]
 
 public class BombPatternSO : AttackPatternSO
 {

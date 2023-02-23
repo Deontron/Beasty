@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Skills/AllSideAttack")]
+[CreateAssetMenu(menuName = "Skills/AllSideAttack")]
 
 public class SpreadPatternSO : AttackPatternSO
 {
