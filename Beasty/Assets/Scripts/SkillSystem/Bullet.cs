@@ -8,11 +8,12 @@ public class Bullet : MonoBehaviour, IHealth
     public float bulletSpeed;
     public float bulletDamage;
 
-    public float health { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+    public float health { get; set; }
 
     void Start()
     {
         GetComponent<Rigidbody2D>().velocity = transform.up * bulletSpeed;
+        Destroy(gameObject, 10);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,6 +27,7 @@ public class Bullet : MonoBehaviour, IHealth
 
     public void GetHit(float damage, GameObject sender)
     {
+        print(sender.name);
         Destroy(gameObject);
     }
 }

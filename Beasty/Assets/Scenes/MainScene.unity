@@ -279,7 +279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344332625}
   - component: {fileID: 344332626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Skill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1749,7 @@ GameObject:
   - component: {fileID: 2055504775}
   - component: {fileID: 2055504777}
   - component: {fileID: 2055504776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Beast
   m_TagString: Beast
   m_Icon: {fileID: 0}

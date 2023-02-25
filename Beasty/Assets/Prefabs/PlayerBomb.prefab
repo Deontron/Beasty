@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -7398647177712351356}
   - component: {fileID: 8130509588916467956}
   - component: {fileID: 648359612412868294}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerBomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7219d79eee433b14a8b0e8e002aa7edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 5
+  bulletSpeed: 10
   bulletDamage: 10
 --- !u!50 &8130509588916467956
 Rigidbody2D:

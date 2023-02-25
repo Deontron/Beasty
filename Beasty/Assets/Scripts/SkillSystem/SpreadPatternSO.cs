@@ -7,7 +7,8 @@ using UnityEngine;
 
 public class SpreadPatternSO : AttackPatternSO
 {
-    private float angleDegrees = 15f;
+    [SerializeField]
+    private float angleDegrees = 10f;
     public override void Perform(Transform shootingStartPoint)
     {
         Instantiate(projectile, shootingStartPoint.position, shootingStartPoint.rotation);
