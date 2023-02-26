@@ -12,8 +12,18 @@ public class Bullet : MonoBehaviour, IHealth
 
     void Start()
     {
+        BulletMovement();
+        //Destroy(gameObject, 10);
+    }
+
+    public void BulletMovement()
+    {
         GetComponent<Rigidbody2D>().velocity = transform.up * bulletSpeed;
-        Destroy(gameObject, 10);
+    }
+
+    public void ResetBulletMovement()
+    {
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,7 +37,6 @@ public class Bullet : MonoBehaviour, IHealth
 
     public void GetHit(float damage, GameObject sender)
     {
-        print(sender.name);
         Destroy(gameObject);
     }
 }
